@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Podstawy kalisteniki</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("p").hide();
+            });
+            $("#show").click(function () {
+                $("p").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div align="center">
+        <div id="kontener">
+            <div id="gorna_czesc_kontenera">
+                <a href="index.html"><img class="logo" src="obrazki/kali_logo4.png" alt="logo" /></a>
+                <div id="gorne_menu">
+                    <ul id="wlasciwe_gorne_menu">
+                        <li ><a href="index.html"><span class="link">Strona Główna</span></a></li>
+                        <li><a href="podstrona1.html"><span class="link">Jak zacząć</span></a></li>
+                        <li><a href="podstrona2.html"><span class="link">Rozgrzewka</span></a></li>
+                        <li><a href="podstrona3.html"><span class="link">Plan na start</span></a></li>
+                        <li style="border-left: 1px solid black;" class="aktualny"><a href="podstrona4.html"><span class="link">Dieta</span></a></li>
+                    </ul>
+
+                </div>
+                <div id="kontakt_box">
+                    <table>
+                        <tr><th>Kontakt:</th></tr>
+                       
+                        <tr><td>e-mail: <a href="mailto:kkier2701@gmail.com">kkier2701@gmail.com</a></td></tr>
+                    </table>
+                </div>
+            </div>
+            <!-- koniec div gorna_czesc_kontenera -->
+
+            <div id="zawartosc">
+                <div id="gorna_czesc_zawartosci"></div>
+                <div id="srodkowa_czesc_zawartosci">
+
+
+                    <div id="tekst">
+
+                        <h1>Dieta</h1>
+
+                        <p>
+                            Ponieważ treningi kalisteniczne są dosyć wymagające, trzeba zwiększyć podaż węglowodanów w diecie. Białko wystarczy spożywać w ilości 2 g na każdy kilogram masy ciała. Tłuszcze natomiast w wysokości 30-35% kaloryczności dziennej. Taka ich ilość pozwoli na optymalną produkcję testosteronu u mężczyzn. Kobiety natomiast powinny zadbać, by w ich diecie tłuszcze oscylowały na minimalnym poziomie - 1 g na każdy kilogram masy ciała. Węglowodany do uzupełnienia bilansu kalorycznego.
+                            W diecie należy skoncentrować się na naturalnych produktach bogatych w witaminy i minerały. Dzięki olbrzymiej popularności super-foods stają się one coraz tańsze. Pozwala to na włączenie do diety takich produktów jak nasiona chia, jagody goji oraz orzechy bez mocnego nadwyrężenia portfela. Zawsze należy również jeść odpowiednią ilość warzyw. W okresie zimowym, kiedy trudno o świeże warzywa, mogą to być mrożonki.
+
+                            Istotna również jest ilość wypijanych płynów. Zawsze należy mieć na uwadze, że dzięki piciu odpowiedniej ilości wody nasz organizm oczyszcza się z toksyn oraz nawadnia wszystkie komórki ciała, w tym mięśnie i mózg. Zalecana ilość wody na dobę to od 0,03 do 0,04 litra na kilogram masy ciała. Dla przeciętnej osoby daje to około 2,5 litra dziennie.
+
+                            Liczba posiłków w ciągu dnia może wahać się od 4 do 6 w zależności od potrzeby. Najlepiej jeść co 2,5 do 4 godzin. Dzięki temu organizm będzie miał stały poziom energii, a my nie będziemy podjadać.
+
+                            Suplementacja na jakiej należy się skoncentrować będzie uzależniona przede wszystkim od celu, jaki sobie stawiamy. Najważniejsze suplementy to witaminy i minerały, kwasy omega-3 oraz kreatyna. Pomimo dobrze skomponowanej diety, sportowiec może mieć niedobory witamin. Spowodowane jest to jakością pożywienia. Z tego powodu warto sięgnąć po preparaty witaminowe. Kwasy omega-3 z kolei będą niezbędne dla osób, które nie lubią ryb bądź jedzą ich mało. Kreatyna z kolei jest najlepiej przebadanym suplementem, który warto zażywać nie zależnie od tego, czy chcemy budować siłę i masę, czy też redukować tkankę tłuszczową.
+                        </p>
+                        <button id="hide">Ukryj tekst</button>
+                        <button id="show">Pokaż tekst</button>
+
+
+                    </div>
+
+                    <div class="obrazki">
+                        <img src="obrazki/dieta.jpg" alt="dieta" title="dieta" />
+                    </div>
+                </div>
+                <!--koniec div srodkowa_czesc_zawartosci -->
+                <div id="dolna_czesc_zawartosci"></div>
+            </div>
+            <!-- koniec div zawartosc -->
+            <div id="dolna_czesc_strony">
+                <img id="newsletter_icon" src="obrazki/newsletter_icon.gif" alt="Newsletter Icon" />
+                <div id="tekst_newsletter">
+                    <div id="naglowek_newsletter">Zapisz się do Newslettera i bądź na bieżąco z nowościami :-)</div>
+                    <div id="form_newsletter">
+                        <form action="#" method="post">
+                            <div>
+                                Twój e-mail: <input class="input_text" type="text" name="email" />
+                                <input class="submit_button" type="submit" value="Zapisuje się*" />
+                            </div>
+                        </form>
+                    </div>
+                    <div id="newsletter_info">
+                        *Szanujemy Ciebie i tak samo nie lubimy spamu jak Ty, będziemy informowali Cię tylko o samych nowościach. W każdym momencie, możesz wypisać się z Newsletera wysyłając do nas e-mail'a. Dla formalności przyciskając button "Zapisuje się*" akceptujesz nasze <a href="#">zasady prywatności</a>.
+                    </div>
+                </div>
+            </div>
+            <!-- koniec dolna_czesc_strony -->
+            <div id="copyright">
+                &copy;  created by <em>Kamil Kierski</em>
+            </div>
+        </div>
+        <!-- koniec div kontener-->
+    </div>
+</body>
+</html>
+
+
+
